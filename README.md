@@ -1,2 +1,2 @@
 # Income-predictor
-Quick intro into the world of distributed machine learning. This demonstration will provide an end-to-end solution that provides machine learning predictive capabilities. Here i will be leveraging some distributed services to launch an EMR cluster configured and pre-installed with Apache Spark for the purpose of training a machine learning model using a decision tree. 
+This demonstration will provide an end-to-end solution that provides machine learning predictive capabilities. Here i will be leveraging some distributed services to launch an EMR cluster configured and pre-installed with Apache Spark for the purpose of training a machine learning model using a decision tree. 
