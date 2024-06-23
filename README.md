@@ -1,5 +1,10 @@
 # Income-predictor
-This demonstration will provide an end-to-end solution that provides machine learning predictive capabilities. Here i will be leveraging some distributed services to launch an EMR cluster configured and pre-installed with Apache Spark for the purpose of training a machine learning model using a decision tree. 
+
+## Introduction 
+This projects builds a machine learning algorithm to predict whether income exceeds $50k/yr based on census data. However the main goal of this project is to demonstrate how to leverage distributed services by launching an EMR cluster configuration with pre-installed Apache Spark as well as using AWS Glue for ETL.
+
+
+## Technology Used
 
 Apache Spark
 
@@ -58,3 +63,30 @@ We’ll provide an understanding what a Decision Tree is - and what types of ana
 We’ll review the basics of using Apache Zeppelin notebooks - which can be used for interactive machine learning sessions
 We’ll review AWS Glue. We’ll show you how you can use AWS Glue to perform ETL to prepare our datasets for ingestion into a machine learning pipeline.
 Finally - We’ll present a demonstration of a fully functional distributed machine learning environment implemented using Spark running on top of an EMR cluster
+
+## Solution Breakdown
+
+# Getting Started
+
+
+1. Download the dataset:
+    ```bash
+        wget https://archive.ics.uci.edu/static/public/20/census+income.zip
+    ```
+2. Unzip the file 
+    ```bash
+        mkdir census_income/
+        tar -xvzf census+income.zip -C census_income
+    ```
+3. Set up aws cli on your local machine 
+4. Create an S3 bucket 
+5. Push the folder to your bucker
+    ```bash
+        aws s3 cp census_income/ s3://census-income-oluwaseun/census+income/ --recursive
+    ```
+6. Set up the crawler and select the `census+income` as the source
+    ![crawler](./images/crawler.png)
+7. 
+8. 
+9.  
+10. 
