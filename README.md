@@ -82,7 +82,7 @@ Finally - We’ll present a demonstration of a fully functional distributed mach
 4. Create an S3 bucket 
 5. Push the folder to your bucker
     ```bash
-        aws s3 cp census_income/ s3://census-income-oluwaseun/census+income/ --recursive
+        aws s3 cp census_income/adult.data s3://census-income-oluwaseun/census+income/ 
     ```
 6. Set up the crawler and select the `census+income` as the source
     ![crawler](./images/crawler.png)
