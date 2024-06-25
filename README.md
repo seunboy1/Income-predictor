@@ -118,6 +118,9 @@ Finally - We’ll present a demonstration of a fully functional distributed mach
    
     ![datatarget](./images/datatarget.png)
     
-    4.  
+    4.  Create value for `JOB_NAME` 
+   
+    ![jobname](./images/jobname.png)
+    
 11. 
 12. 
