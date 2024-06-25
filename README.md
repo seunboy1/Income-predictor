@@ -104,6 +104,20 @@ Finally - We’ll present a demonstration of a fully functional distributed mach
 9.  Create an Iam Role which will allows access to S3, CloudWatchLogs, and Glue services `AWSGlueServiceRole`
     
     ![iamrole](./images/iamrole.png)
+
 10. Set up ETL job 
+    1.  Choose data source
+   
+    ![datasource](./images/datasource.png)
+
+    2.  Applying mapping to the target columns and drop irrelevant columns.
+   
+    ![mapping](./images/mapping.png)
+    
+    3.  Choose data target.
+   
+    ![datatarget](./images/datatarget.png)
+    
+    4.  
 11. 
 12. 
