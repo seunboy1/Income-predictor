@@ -80,13 +80,18 @@ Finally - We’ll present a demonstration of a fully functional distributed mach
     ```
 3. Set up aws cli on your local machine 
 4. Create an S3 bucket 
-5. Push the folder to your bucker
+5. Push the folder to your bucket
     ```bash
         aws s3 cp census_income/adult.data s3://census-income-oluwaseun/census+income/ 
     ```
 6. Set up the crawler and select the `census+income` as the source
     ![crawler](./images/crawler.png)
-7. 
-8. 
-9.  
-10. 
+7. Define a new table schema using AWS Athena that will be registered back into the catalogue
+    ![schema](./images/schema.png)
+8. Confirm the table has been created in AWS data catalogue
+    ![table](./images/table.png)
+9. Create an Iam Role which will allows access to S3, CloudWatchLogs, and Glue services `AWSGlueServiceRole`
+    ![iamrole](./images/iamrole.png)
+10. Set up ETL job 
+11. 
+12. 
