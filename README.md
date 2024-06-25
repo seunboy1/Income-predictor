@@ -84,13 +84,25 @@ Finally - We’ll present a demonstration of a fully functional distributed mach
     ```bash
         aws s3 cp census_income/adult.data s3://census-income-oluwaseun/census+income/ 
     ```
-6. Set up the crawler and select the `census+income` as the source
+6. Set up the crawler 
+   1. select the `census+income` as the source
+   2. Create Iamrole with access to s3 and glue
+   3. Create table to store the data
+   4. Run crawler
+   5. Then confrim all these have been create successfully
+   
     ![crawler](./images/crawler.png)
-7. Define a new table schema using AWS Athena that will be registered back into the catalogue
+
+7. Define a new table schema where the transformed data will be stored into using AWS Athena. This will be registered back into the data catalogue
+   
     ![schema](./images/schema.png)
+
 8. Confirm the table has been created in AWS data catalogue
+   
     ![table](./images/table.png)
-9. Create an Iam Role which will allows access to S3, CloudWatchLogs, and Glue services `AWSGlueServiceRole`
+
+9.  Create an Iam Role which will allows access to S3, CloudWatchLogs, and Glue services `AWSGlueServiceRole`
+    
     ![iamrole](./images/iamrole.png)
 10. Set up ETL job 
 11. 
