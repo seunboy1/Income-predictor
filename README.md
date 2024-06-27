@@ -66,9 +66,6 @@ Finally - We’ll present a demonstration of a fully functional distributed mach
 
 ## Solution Breakdown
 
-# Getting Started
-
-
 1. Download the dataset:
     ```bash
         wget https://archive.ics.uci.edu/static/public/20/census+income.zip
@@ -118,9 +115,28 @@ Finally - We’ll present a demonstration of a fully functional distributed mach
    
     ![datatarget](./images/datatarget.png)
     
-    4.  Create value for `JOB_NAME` 
+    4.  Set value for `JOB_NAME` variable
    
     ![jobname](./images/jobname.png)
+
+    5.  Run the ETL job and query the database
+   
+    ![query](./images/query.png)
     
-11. 
-12. 
+11. Create EMR Cluster to launch Spark and Jupyter notebook and access to Glue data catalogue
+    1.  Select necessary application bundle
+   
+    ![query](./images/query.png)
+
+    2.  Select the no of core and task nodes
+12. Add inbound rule for port 22 to the master node
+13. ssh into the master node 
+    ```bash
+        ssh -v -i testkey.pem hadoop@ec2-18-234-245-17.compute-1.amazonaws.com
+    ``` 
+14. Setup ssh port forwarding for zeppelin port 
+    ```bash
+        ssh -i testkey.pem -N -f -L localhost:8890:localhost:8890 hadoop@ec2-54-173-25-210.compute-1.amazonaws.com
+    ``` 
+15. Confirm if the port forwarding has been launched succesfully 
+16. 
