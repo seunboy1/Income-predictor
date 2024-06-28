@@ -138,6 +138,13 @@ Finally - We’ll present a demonstration of a fully functional distributed mach
     ```bash
         ssh -i testkey.pem -L localhost:9443:localhost:9443 hadoop@ec2-18-207-230-29.compute-1.amazonaws.com
     ``` 
-15. Login to jupyter via `http://localhost:9443` and create a notebook. 
-    Note: if you are logging for the first time the user name is `jovyan` and the password is `jupyter`. Also location of the notebooks can be found here `/mnt/var/lib/jupyter/home/jovyan/`. Also jupyter configuration files can be found here `/etc/jupyter/conf/`
-16. 
+15. Login to jupyter via `http://localhost:9443`
+    
+    Note: if you are logging for the first time the user name is `jovyan` and the password is `jupyter`. Also jupyter configuration files can be found here `/etc/jupyter/conf/`
+16. Dowload training notebook and run cells
+    ```bash
+        cd /mnt/var/lib/jupyter/home/jovyan/
+        sudo aws s3 cp s3://census-income-oluwaseun/census+income/training.ipynb .
+    ``` 
+17. 
+18. 
