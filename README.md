@@ -126,10 +126,13 @@ Finally - We’ll present a demonstration of a fully functional distributed mach
 11. Create EMR Cluster to launch Spark and Jupyter notebook and access to Glue data catalogue
     1.  Select necessary application bundle
    
-    ![query](./images/query.png)
+    ![emr](./images/emr.png)
 
     2.  Select the no of core and task nodes
-12. Add inbound rule for port 22 to the master node
+12. Add inbound rule for port 22 and 9443 to the master node. This will allow you to ssh into the instance and jupyter notebook
+   
+    ![inbound](./images/inbound.png)
+    
 13. ssh into the master node 
     ```bash
         ssh -v -i testkey.pem hadoop@ec2-18-234-245-17.compute-1.amazonaws.com
