@@ -129,17 +129,15 @@ Finally - We’ll present a demonstration of a fully functional distributed mach
     ![emr](./images/emr.png)
 
     2.  Select the no of core and task nodes
-12. Add inbound rule for port 22 and 9443 to the master node. This will allow you to ssh into the instance and jupyter notebook
-   
-    ![inbound](./images/inbound.png)
-    
+12. Add inbound rule for port 22 to the master node. 
 13. ssh into the master node 
     ```bash
         ssh -v -i testkey.pem hadoop@ec2-18-234-245-17.compute-1.amazonaws.com
     ``` 
-14. Setup ssh port forwarding for zeppelin port 
+14. Setup ssh port forwarding for jupyterhub port 9443
     ```bash
-        ssh -i testkey.pem -N -f -L localhost:8890:localhost:8890 hadoop@ec2-54-173-25-210.compute-1.amazonaws.com
+        ssh -i testkey.pem -L localhost:9443:localhost:9443 hadoop@ec2-18-207-230-29.compute-1.amazonaws.com
     ``` 
-15. Confirm if the port forwarding has been launched succesfully 
+15. Login to jupyter via `http://localhost:9443` and create a notebook. 
+    Note: if you are logging for the first time the user name is `jovyan` and the password is `jupyter`. Also location of the notebooks can be found here `/mnt/var/lib/jupyter/home/jovyan/`. Also jupyter configuration files can be found here `/etc/jupyter/conf/`
 16. 
