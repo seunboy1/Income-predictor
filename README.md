@@ -106,4 +106,3 @@ AWS Glue is a fully managed ETL (Extract, Transform, Load) service that simplifi
         cd /mnt/var/lib/jupyter/home/jovyan/
         sudo aws s3 cp s3://census-income-oluwaseun/census+income/training.ipynb .
     ``` 
-    
