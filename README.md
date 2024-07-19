@@ -15,7 +15,6 @@ Amazon Elastic Map Reduce
 
 Amazon Elastic MapReduce (EMR) is a cloud-based service that simplifies running big data frameworks like Apache Hadoop and Apache Spark on AWS to process and analyze vast amounts of data. It automates cluster provisioning, configuration, and tuning, allowing users to focus on data analysis without managing the underlying infrastructure.
 
-
 Spark MLlib
 
 Apache Spark MLlib is a scalable machine learning library built on top of Apache Spark, providing high-level APIs and tools for common machine learning algorithms and data preprocessing tasks. It leverages Spark's distributed computing capabilities to handle large-scale data efficiently.
